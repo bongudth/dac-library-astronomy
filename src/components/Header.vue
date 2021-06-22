@@ -45,16 +45,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.header-dark {
-  padding-bottom: 80px;
-}
-
-@media (min-width: 768px) {
-  .header-dark {
-    padding-bottom: 120px;
-  }
-}
-
 .header-dark .navbar {
   background: transparent;
   padding-top: 0;
