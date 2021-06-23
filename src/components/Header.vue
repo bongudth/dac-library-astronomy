@@ -35,6 +35,19 @@
         </div>
       </div>
     </div>
+    <section>
+      <ul class="icon-list">
+        <li class="icon-item">
+          <a href="https://www.facebook.com/ThienVanDaNang" class="icon-link"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li class="icon-item">
+          <a href="https://www.instagram.com/thienvanhocdanang.dac/" class="icon-link"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li class="icon-item">
+          <a href="#https://thienvandanang.com/" class="icon-link"><i class="fab fa-dribbble"></i></a>
+        </li>
+      </ul>
+    </section>
   </div>
 </template>
 
@@ -156,13 +169,69 @@ export default {
   font-family: "Lora", serif;
   font-size: 40px;
   margin-top: 20px;
-  margin-bottom: 80px;
 }
 
 @media (min-width: 768px) {
   .header-dark .hero h1 {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     line-height: 1.5;
   }
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  background: var(--bg);
+  z-index: -10;
+}
+
+.icon-list {
+  width: 100%;
+  max-width: 30rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.icon-item {
+  list-style: none
+}
+
+.icon-link {  
+  display: inline-flex;
+  font-size: 3rem;  
+  text-decoration: none;  
+  color: var(--color-icon);
+  width: 5rem;
+  height: 5rem;   
+  transition: .5s linear;
+  position: relative;
+  z-index: 1;
+  margin: auto
+}
+
+.icon-link:hover {
+  color: #fff;
+}
+
+.icon-link::before {  
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 6rem;
+  height: 6rem;
+  background: #000;
+  border-radius: 50%;
+  z-index: -1;
+  transform: scale(0);
+  transition: 0.3s cubic-bezier(.95, .32, .37, 1.21);
+}
+  
+.icon-link:hover::before {  
+  transform: scale(1);
 }
 </style>
