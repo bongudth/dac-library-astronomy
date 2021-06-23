@@ -20,10 +20,10 @@ export default {
 
 <style lang="scss">
 #app {
-  font-family: "Patrick Hand";
+  font-family: "Mali Regular";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url(./assets/image/background.jpg);
+  background: url(./assets/images/background.jpg);
   background-size: contain;
   background-repeat: repeat;  
 }
