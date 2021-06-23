@@ -134,7 +134,7 @@ export default {
 }
 
 .header-dark .navbar .action-button:hover {
-  background: #269d9d;
+  background: #B97B8A;
 }
 
 .header-dark .navbar .form-inline label {
