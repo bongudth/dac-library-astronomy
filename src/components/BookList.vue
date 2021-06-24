@@ -291,6 +291,6 @@ body {
 .product-wrapper:hover {
   cursor: pointer;
   transform: rotateY(-28deg) rotateZ(-2deg) scale(1.02);
-  box-shadow: 1px 3px 2px #26282C, 15px 7px 0 #434D54;
+  box-shadow: 1px 1px 2px #26282C, 5px 3px 0px #ffffff, 10px 6px 0px #ffffff, 15px 9px 0 #434D54;
 }
 </style>
