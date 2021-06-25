@@ -19,11 +19,11 @@
             <li class="nav-item" role="presentation">
               <a class="nav-link" href="#">Lịch sử</a>
             </li>
-          </ul>
-          <span class="navbar-text"
-            ><a href="#" class="login">Đăng nhập</a></span
-          ><a class="btn btn-light action-button" role="button" href="#"
-            >Đăng ký</a
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" href="#">Wishlist</a>
+            </li>
+          </ul><a class="btn btn-light action-button" role="button" href="#"
+            >Đăng nhập</a
           >
         </div>
       </div>
