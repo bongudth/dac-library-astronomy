@@ -3,10 +3,15 @@
     <form onsubmit="event.preventDefault()" class="box">
       <h1>Đăng nhập</h1>
       <p class="text-muted">Vui lòng nhập họ tên và mật khẩu!</p>
-      <input type="text" name="" placeholder="Họ tên" />
-      <input type="password" name="" placeholder="Mật khẩu" />
+      <div class="txt">
+        <input type="text" name="" placeholder="Họ tên" />
+        <input type="password" name="" placeholder="Mật khẩu" />
+      </div>
       <a class="forgot text-muted" href="#">Quên mật khẩu?</a>
-      <input type="submit" name="" value="Đăng nhập" href="#" />
+      <div class="btn">
+        <input @click="$emit('close')" type="button" name="" value="Hủy" href="#" />
+        <input type="submit" name="" value="Đăng nhập" href="#" />
+      </div>
     </form>
   </div>
 </template>
@@ -23,10 +28,11 @@ export default {
   display: flex;
   justify-content: center;
 }
+
 .box {
+  border: 1px solid #ffffff;
   width: 500px;
   padding: 40px;
-  position: absolute;
   background: #010101;
   text-align: center;
   transition: 0.25s;
@@ -52,6 +58,11 @@ export default {
   color: white;
   text-transform: uppercase;
   font-weight: 500;
+  margin: 30px 0;
+}
+
+.txt {
+  margin: 50px 0;
 }
 
 .box input[type="text"]:focus,
@@ -60,6 +71,11 @@ export default {
   border-color: #824958;
 }
 
+.btn {
+  display: flex;
+}
+
+.box input[type="button"],
 .box input[type="submit"] {
   border: 0;
   background: none;
@@ -73,8 +89,10 @@ export default {
   border-radius: 24px;
   transition: 0.25s;
   cursor: pointer;
+  width: 180px;
 }
 
+.box input[type="button"]:hover,
 .box input[type="submit"]:hover {
   background: #824958;
 }
