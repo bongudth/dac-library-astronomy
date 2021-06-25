@@ -1,251 +1,10 @@
 <template>
   <div class="container d-flex justify-content-center">
     <div class="row">
-      <div class="col-md">
+      <div class="col-md" v-for="book in books" :key="book.id">
         <div class="product-wrapper mb-45">
           <div class="product-img">
-            <img src="../assets/books/200-cau-hoi-loi-giai-dap.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img
-              src="../assets/books/1001-dieu-bi-an-chua-co-loi-giai.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img src="../assets/books/ban-thiet-ke-vi-dai.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img src="../assets/books/ca-phe-tren-sao-hoa.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img src="../assets/books/chia-khoa-vu-tru-cua-geogre.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img src="../assets/books/chuyen-nang-vepa.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img src="../assets/books/cuoc-chien-lo-den.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img src="../assets/books/cuoc-doi-ky-la-cua-nikola-tesla.png" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img src="../assets/books/cuu-tinh-vu-tru.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img src="../assets/books/dao-cua-vat-ly.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img src="../assets/books/doi-mat-voi-vu-tru.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img src="../assets/books/du-hanh-vao-tam-anh-sang.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img src="../assets/books/einstein-va-vu-tru-gian-no.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img src="../assets/books/galileo-galilei-nhung-nha-khoa-hoc-lam-thay-doi-the-gioi.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img src="../assets/books/giao-trinh-quang-hoc.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img src="../assets/books/hoc-don-va-hai-hoa.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img src="../assets/books/kho-tang-tri-thuc-nhan-loai.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img src="../assets/books/luoc-su-thoi-gian.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img src="../assets/books/nhung-cau-chuyen-phieu-luu-cua-mr-tompkins.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img src="../assets/books/nhung-cau-hoi-lon.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img src="../assets/books/nhung-con-duong-cua-anh-sang-tap-1.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img src="../assets/books/nhung-con-duong-cua-anh-sang-tap-2.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img src="../assets/books/problems-in-elementary-physics.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img src="../assets/books/so-tay-phi-hanh-gia.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img src="../assets/books/song-ngan-khi-to-khi-mo.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img src="../assets/books/su-tien-hoa-cua-vat-ly.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img src="../assets/books/tham-do-vu-tru.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img src="../assets/books/the-gioi-nhung-dieu-chua-biet-tap-2.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img src="../assets/books/thien-ha-that-dang-ngac-nhien.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img src="../assets/books/thien-van-vat-ly.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img src="../assets/books/trai-dat-va-he-mat-troi.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img src="../assets/books/tu-dien-thien-van-hoc-va-vat-ly-thien-van.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img src="../assets/books/ufo-dia-bay-da-hien-huu-day-roi.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img src="../assets/books/vu-tru-huyen-bi.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="col-md">
-        <div class="product-wrapper mb-45">
-          <div class="product-img">
-            <img src="../assets/books/vu-tru-va-hoa-sen.jpg" alt="" />
+            <img :src="require('../assets/books/' + book.image)" alt="" />
           </div>
         </div>
       </div>
@@ -256,6 +15,47 @@
 <script>
 export default {
   name: "BookList",
+  data() {
+    return {
+      books: [
+        { id: "1", image: "200-cau-hoi-loi-giai-dap.jpg" },
+        { id: "2", image: "1001-dieu-bi-an-chua-co-loi-giai.jpg" },
+        { id: "3", image: "ban-thiet-ke-vi-dai.jpg" },
+        { id: "4", image: "ca-phe-tren-sao-hoa.jpg" },
+        { id: "5", image: "chia-khoa-vu-tru-cua-geogre.jpg" },
+        { id: "6", image: "chuyen-nang-vepa.jpg" },
+        { id: "7", image: "cuoc-chien-lo-den.jpg" },
+        { id: "8", image: "cuoc-doi-ky-la-cua-nikola-tesla.png" },
+        { id: "9", image: "cuu-tinh-vu-tru.jpg" },
+        { id: "10", image: "dao-cua-vat-ly.jpg" },
+        { id: "11", image: "doi-mat-voi-vu-tru.jpg" },
+        { id: "12", image: "du-hanh-vao-tam-anh-sang.jpg" },
+        { id: "13", image: "einstein-va-vu-tru-gian-no.jpg" },
+        { id: "14", image: "galileo-galilei-nhung-nha-khoa-hoc-lam-thay-doi-the-gioi.jpg" },
+        { id: "15", image: "giao-trinh-quang-hoc.jpg" },
+        { id: "16", image: "hoc-don-va-hai-hoa.jpg" },
+        { id: "17", image: "kho-tang-tri-thuc-nhan-loai.jpg" },
+        { id: "18", image: "luoc-su-thoi-gian.jpg" },
+        { id: "19", image: "nhung-cau-chuyen-phieu-luu-cua-mr-tompkins.jpg" },
+        { id: "20", image: "nhung-cau-hoi-lon.jpg" },
+        { id: "21", image: "nhung-con-duong-cua-anh-sang-tap-1.jpg" },
+        { id: "22", image: "nhung-con-duong-cua-anh-sang-tap-2.jpg" },
+        { id: "23", image: "problems-in-elementary-physics.jpg" },
+        { id: "24", image: "so-tay-phi-hanh-gia.jpg" },
+        { id: "25", image: "song-ngan-khi-to-khi-mo.jpg" },
+        { id: "26", image: "su-tien-hoa-cua-vat-ly.jpg" },
+        { id: "27", image: "tham-do-vu-tru.jpg" },
+        { id: "28", image: "the-gioi-nhung-dieu-chua-biet-tap-2.jpg" },
+        { id: "29", image: "thien-ha-that-dang-ngac-nhien.jpg" },
+        { id: "30", image: "thien-van-vat-ly.jpg" },
+        { id: "31", image: "trai-dat-va-he-mat-troi.jpg" },
+        { id: "32", image: "tu-dien-thien-van-hoc-va-vat-ly-thien-van.jpg" },
+        { id: "32", image: "ufo-dia-bay-da-hien-huu-day-roi.jpg" },
+        { id: "32", image: "vu-tru-huyen-bi.jpg" },
+        { id: "32", image: "vu-tru-va-hoa-sen.jpg" }
+      ] 
+    }
+  },
 };
 </script>
 
@@ -285,12 +85,13 @@ body {
 
 .product-wrapper {
   border-radius: 0 5px 5px 0;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .product-wrapper:hover {
   cursor: pointer;
   transform: rotateY(-28deg) rotateZ(-2deg) scale(1.02);
-  box-shadow: 1px 1px 2px #26282C, 5px 3px 0px #ffffff, 10px 6px 0px #ffffff, 15px 9px 0 #434D54;
+  box-shadow: 1px 1px 2px #26282c, 5px 3px 0px #ffffff, 10px 6px 0px #ffffff,
+    15px 9px 0 #434d54;
 }
 </style>
