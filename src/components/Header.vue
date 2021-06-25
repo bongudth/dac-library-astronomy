@@ -44,7 +44,7 @@
           <a href="https://www.instagram.com/thienvanhocdanang.dac/" class="icon-link"><i class="fab fa-instagram"></i></a>
         </li>
         <li class="icon-item">
-          <a href="#https://thienvandanang.com/" class="icon-link"><i class="fab fa-dribbble"></i></a>
+          <a href="#https://thienvandanang.com/" class="icon-link"><i class="fas fa-globe-americas"></i></a>
         </li>
       </ul>
     </section>
