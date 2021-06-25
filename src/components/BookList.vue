@@ -31,7 +31,10 @@ export default {
         { id: "11", image: "doi-mat-voi-vu-tru.jpg" },
         { id: "12", image: "du-hanh-vao-tam-anh-sang.jpg" },
         { id: "13", image: "einstein-va-vu-tru-gian-no.jpg" },
-        { id: "14", image: "galileo-galilei-nhung-nha-khoa-hoc-lam-thay-doi-the-gioi.jpg" },
+        {
+          id: "14",
+          image: "galileo-galilei-nhung-nha-khoa-hoc-lam-thay-doi-the-gioi.jpg",
+        },
         { id: "15", image: "giao-trinh-quang-hoc.jpg" },
         { id: "16", image: "hoc-don-va-hai-hoa.jpg" },
         { id: "17", image: "kho-tang-tri-thuc-nhan-loai.jpg" },
@@ -50,11 +53,11 @@ export default {
         { id: "30", image: "thien-van-vat-ly.jpg" },
         { id: "31", image: "trai-dat-va-he-mat-troi.jpg" },
         { id: "32", image: "tu-dien-thien-van-hoc-va-vat-ly-thien-van.jpg" },
-        { id: "32", image: "ufo-dia-bay-da-hien-huu-day-roi.jpg" },
-        { id: "32", image: "vu-tru-huyen-bi.jpg" },
-        { id: "32", image: "vu-tru-va-hoa-sen.jpg" }
-      ] 
-    }
+        { id: "33", image: "ufo-dia-bay-da-hien-huu-day-roi.jpg" },
+        { id: "34", image: "vu-tru-huyen-bi.jpg" },
+        { id: "35", image: "vu-tru-va-hoa-sen.jpg" },
+      ],
+    };
   },
 };
 </script>

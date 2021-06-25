@@ -22,29 +22,43 @@
             <li class="nav-item" role="presentation">
               <a class="nav-link" href="#">Wishlist</a>
             </li>
-          </ul><a class="btn btn-light action-button" role="button" href="#"
-            >Đăng nhập</a
+          </ul>
+          <button
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            class="btn btn-light action-button"
           >
+            Đăng nhập
+          </button>
         </div>
       </div>
     </nav>
     <div class="container hero">
       <div class="row">
         <div class="col-md-8 offset-md-2">
-          <h1 class="text-center">Tủ sách thiên văn</h1>
+          <h1 class="text-center">TỦ SÁCH THIÊN VĂN</h1>
         </div>
       </div>
     </div>
     <section>
       <ul class="icon-list">
         <li class="icon-item">
-          <a href="https://www.facebook.com/ThienVanDaNang" class="icon-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.facebook.com/ThienVanDaNang" class="icon-link"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
         </li>
         <li class="icon-item">
-          <a href="https://www.instagram.com/thienvanhocdanang.dac/" class="icon-link"><i class="fab fa-instagram"></i></a>
+          <a
+            href="https://www.instagram.com/thienvanhocdanang.dac/"
+            class="icon-link"
+            ><i class="fab fa-instagram"></i
+          ></a>
         </li>
         <li class="icon-item">
-          <a href="https://thienvandanang.com/" class="icon-link"><i class="fas fa-globe-americas"></i></a>
+          <a href="https://thienvandanang.com/" class="icon-link"
+            ><i class="fas fa-globe-americas"></i
+          ></a>
         </li>
       </ul>
     </section>
@@ -142,7 +156,7 @@ export default {
 }
 
 .header-dark .navbar .action-button:hover {
-  background: #B97B8A;
+  background: #b97b8a;
 }
 
 .header-dark .navbar .form-inline label {
@@ -161,7 +175,6 @@ export default {
 
 .header-dark .hero h1 {
   color: #fff;
-  font-family: "Lora", serif;
   font-size: 40px;
   margin-top: 20px;
 }
@@ -176,7 +189,7 @@ export default {
 section {
   display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
 }
 
 ul {
@@ -192,15 +205,15 @@ ul {
 }
 
 .icon-item {
-  list-style: none
+  list-style: none;
 }
 
-.icon-link {  
+.icon-link {
   display: inline-flex;
-  font-size: 2rem;  
-  text-decoration: none;  
+  font-size: 2rem;
+  text-decoration: none;
   color: var(--color-icon);
-  transition: .5s linear;
+  transition: 0.5s linear;
   position: relative;
 }
 
@@ -208,14 +221,14 @@ ul {
   color: #fff;
 }
 
-.icon-link::before {  
-  content: '';
+.icon-link::before {
+  content: "";
   position: absolute;
   transform: scale(0);
-  transition: 0.3s cubic-bezier(.95, .32, .37, 1.21);
+  transition: 0.3s cubic-bezier(0.95, 0.32, 0.37, 1.21);
 }
-  
-.icon-link:hover::before {  
+
+.icon-link:hover::before {
   transform: scale(1);
 }
 </style>
