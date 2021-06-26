@@ -26,12 +26,10 @@
         </div>
       </div>
     </nav>
-    <div class="modal-mask" v-if="showModal" @close="showModal = false">
+    <div class="modal-mask" v-if="showModal">
       <div class="modal-wrapper">
         <div class="modal-container">
-          <modal>
-            <Login />
-          </modal>
+          <Login @close="showModal = false" />
         </div>
       </div>
     </div>
@@ -73,7 +71,7 @@ export default {
   name: "Header",
   data() {
     return {
-      showModal: true,
+      showModal: false,
     };
   },
   components: {
