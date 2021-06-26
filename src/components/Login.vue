@@ -30,12 +30,13 @@ export default {
 }
 
 .box {
-  border: 1px solid #ffffff;
+  border: 1px solid #3B2938;
   width: 500px;
   padding: 40px;
   background: #010101;
   text-align: center;
   transition: 0.25s;
+  border-radius: 25px;
 }
 
 .box input[type="text"],
