@@ -2,17 +2,19 @@
   <div class="header-dark">
     <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
       <div class="container">
-        <a class="navbar-brand" href="#">DAC</a>
+        <router-link to="/home" class="navbar-brand">DAC</router-link>
         <div class="collapse navbar-collapse" id="navcol-1">
           <ul class="nav navbar-nav mr-auto">
             <li class="nav-item" role="presentation">
-              <a class="nav-link" href="#">Tủ sách</a>
+              <router-link to="/library" class="nav-link">Tủ sách</router-link>
             </li>
             <li class="nav-item" role="presentation">
-              <a class="nav-link" href="#">Lịch sử</a>
+              <router-link to="/history" class="nav-link">Lịch sử</router-link>
             </li>
             <li class="nav-item" role="presentation">
-              <a class="nav-link" href="#">Wishlist</a>
+              <router-link to="/wishlist" class="nav-link"
+                >Yêu thích</router-link
+              >
             </li>
           </ul>
           <button
@@ -33,34 +35,6 @@
         </div>
       </div>
     </div>
-    <div class="container hero">
-      <div class="row">
-        <div class="col-md-8 offset-md-2">
-          <h1 class="text-center">TỦ SÁCH THIÊN VĂN</h1>
-        </div>
-      </div>
-    </div>
-    <section>
-      <ul class="icon-list">
-        <li class="icon-item">
-          <a href="https://www.facebook.com/ThienVanDaNang" class="icon-link"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-        </li>
-        <li class="icon-item">
-          <a
-            href="https://www.instagram.com/thienvanhocdanang.dac/"
-            class="icon-link"
-            ><i class="fab fa-instagram"></i
-          ></a>
-        </li>
-        <li class="icon-item">
-          <a href="https://thienvandanang.com/" class="icon-link"
-            ><i class="fas fa-globe-americas"></i
-          ></a>
-        </li>
-      </ul>
-    </section>
   </div>
 </template>
 
@@ -85,16 +59,21 @@ export default {
   .navbar {
     background: transparent;
     color: #fff;
+
     .navbar-brand {
       font-weight: bold;
       color: inherit;
+      cursor: pointer;
+
       &:hover {
         color: #f0f0f0;
       }
     }
+
     .navbar-collapse {
       border-color: #636363;
     }
+
     .action-button {
       background: #824958;
       border-radius: 20px;
@@ -105,6 +84,7 @@ export default {
       text-shadow: none;
       padding: 0.5rem 0.8rem;
       transition: background-color 0.25s;
+
       &:active {
         background: #824958;
         border-radius: 20px;
@@ -116,19 +96,24 @@ export default {
         padding: 0.5rem 0.8rem;
         transition: background-color 0.25s;
       }
+
       &:hover {
         background: #b97b8a;
       }
     }
   }
+
   .navbar.navbar-dark {
     .navbar-nav {
       .nav-link {
         color: #d9d9d9;
+        cursor: pointer;
+
         &:focus {
           color: #fcfeff !important;
           background-color: transparent;
         }
+
         &:hover {
           color: #fcfeff !important;
           background-color: transparent;
@@ -136,15 +121,8 @@ export default {
       }
     }
   }
-  .hero {
-    margin-top: 60px;
-    h1 {
-      color: #fff;
-      font-size: 40px;
-      margin-top: 20px;
-    }
-  }
 }
+
 .modal-mask {
   position: fixed;
   z-index: 9998;
@@ -164,7 +142,6 @@ export default {
 
 .modal-container {
   border-radius: 2px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
   transition: all 0.3s ease;
 }
 
@@ -177,59 +154,16 @@ export default {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-ul {
-  padding-inline-start: 0;
-}
-.icon-list {
-  width: 100%;
-  max-width: 10rem;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 50px;
-}
-.icon-item {
-  list-style: none;
-}
-.icon-link {
-  display: inline-flex;
-  font-size: 2rem;
-  text-decoration: none;
-  color: var(--color-icon);
-  transition: 0.5s linear;
-  position: relative;
-  &:hover {
-    color: #fff;
-    &::before {
-      transform: scale(1);
-    }
-  }
-  &::before {
-    content: "";
-    position: absolute;
-    transform: scale(0);
-    transition: 0.3s cubic-bezier(0.95, 0.32, 0.37, 1.21);
-  }
-}
+
 @media (min-width: 768px) {
   .header-dark {
     .navbar {
       padding-top: 0.75rem;
       padding-bottom: 0.75rem;
     }
-    .hero {
-      margin-top: 20px;
-      h1 {
-        margin-bottom: 30px;
-        line-height: 1.5;
-      }
-    }
   }
 }
+
 @media (min-width: 992px) {
   .header-dark {
     .navbar.navbar {
