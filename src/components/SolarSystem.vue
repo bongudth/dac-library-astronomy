@@ -61,12 +61,9 @@ export default {
 <style lang="scss" scoped>
 .system {
   position: relative;
-  max-width: 700px;
-  display: flex;
-	justify-content: center;
-  align-items: center;
-  overflow: hidden;
   width: 100%;
+  max-width: 700px;
+  padding-top: 100%;  
 
   @media (min-width: 700px) {
     padding-top: 700px;
