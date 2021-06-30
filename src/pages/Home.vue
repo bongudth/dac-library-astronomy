@@ -1,4 +1,5 @@
 <template>
+<div class="container home">
   <section>
     <ul class="icon-list">
       <li class="icon-item">
@@ -20,15 +21,29 @@
       </li>
     </ul>
   </section>
+  <SolarSystem />
+</div>
 </template>
 
 <script>
+import SolarSystem from "../components/SolarSystem.vue"
+
 export default {
   name: "Home",
+  components: {
+    SolarSystem
+  }
 };
 </script>
 
 <style lang="scss" scoped>
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
 section {
   display: flex;
   align-items: center;

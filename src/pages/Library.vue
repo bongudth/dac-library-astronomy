@@ -17,7 +17,7 @@ import BookList from "../components/BookList.vue";
 export default {
   name: "Library",
   components: {
-    BookList,
+    BookList
   },
 };
 </script>

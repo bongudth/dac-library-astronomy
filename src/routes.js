@@ -4,7 +4,7 @@ import History from "./pages/History.vue";
 import Wishlist from "./pages/Wishlist.vue";
 
 export default [
-  { path: '/home', component: Home },
+  { path: '/', component: Home },
   { path: '/library', component: Library },
   { path: '/history', component: History },
   { path: '/wishlist', component: Wishlist }
